@@ -1,7 +1,6 @@
 ARG BASE_IMAGE=eclipse-temurin:21-jre
 FROM ${BASE_IMAGE}
 
-VOLUME ["/server"]
 WORKDIR /server
 
 RUN --mount=target=/build,source=build \
